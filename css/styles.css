@@ -307,6 +307,29 @@ header .headerlogo{
     font-weight: bold;
 }
 
+
+@media (max-width: 767.98px) {
+    #welcome {
+        height: 74vh;
+    }
+
+    #welcome h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #welcome {
+        background: no-repeat center/212% url("../assets/img/teatro.jpg");
+    }
+
+    #welcome h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
 #map{ 
     display: none;
 }
