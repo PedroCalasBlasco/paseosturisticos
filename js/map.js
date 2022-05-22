@@ -11,47 +11,47 @@ function getColor(data)  {
 }
 
 function getIcon(data)  {
-    return data == 1 ? L.icon({iconUrl: '../assets/img/logos/uno.png', iconSize: [38, 44]}) :
-        data == 2 ? L.icon({iconUrl: '../assets/img/logos/dos.png', iconSize: [38, 44]}) :
-        data == 3 ? L.icon({iconUrl: '../assets/img/logos/tres.png', iconSize: [38, 44]}) :
-        data == 4 ? L.icon({iconUrl: '../assets/img/logos/cuatro.png', iconSize: [38, 44]}) :
-        data == 5 ? L.icon({iconUrl: '../assets/img/logos/cinco.png', iconSize: [38, 44]}) :
-        data == 6 ? L.icon({iconUrl: '../assets/img/logos/seis.png', iconSize: [38, 44]}) :
-        data == 7 ? L.icon({iconUrl: '../assets/img/logos/siete.png', iconSize: [38, 44]}) :
-        data == 8 ? L.icon({iconUrl: '../assets/img/logos/ocho.png', iconSize: [38, 44]}) :
-        data == 9 ? L.icon({iconUrl: '../assets/img/logos/nueve.png', iconSize: [38, 44]}) :
-        data == 10 ? L.icon({iconUrl: '../assets/img/logos/diez.png', iconSize: [38, 44]}) :
-        data == 11 ? L.icon({iconUrl: '../assets/img/logos/once.png', iconSize: [38, 44]}) :
-        data == 12 ? L.icon({iconUrl: '../assets/img/logos/doce.png', iconSize: [38, 44]}) :
-        data == 13 ? L.icon({iconUrl: '../assets/img/logos/trece.png', iconSize: [38, 44]}) :
-        data == 14 ? L.icon({iconUrl: '../assets/img/logos/catorce.png', iconSize: [38, 44]}) :
-        data == 15 ? L.icon({iconUrl: '../assets/img/logos/quince.png', iconSize: [38, 44]}) :
-        data == 16 ? L.icon({iconUrl: '../assets/img/logos/dieciseis.png', iconSize: [38, 44]}) :
-        data == 17 ? L.icon({iconUrl: '../assets/img/logos/diecisiete.png', iconSize: [38, 44]}) :
-        data == 18 ? L.icon({iconUrl: '../assets/img/logos/dieciocho.png', iconSize: [38, 44]}) :
-        data == 19 ? L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
+    return data == 1 ? L.icon({iconUrl: './assets/img/logos/uno.png', iconSize: [38, 44]}) :
+        data == 2 ? L.icon({iconUrl: './assets/img/logos/dos.png', iconSize: [38, 44]}) :
+        data == 3 ? L.icon({iconUrl: './assets/img/logos/tres.png', iconSize: [38, 44]}) :
+        data == 4 ? L.icon({iconUrl: './assets/img/logos/cuatro.png', iconSize: [38, 44]}) :
+        data == 5 ? L.icon({iconUrl: './assets/img/logos/cinco.png', iconSize: [38, 44]}) :
+        data == 6 ? L.icon({iconUrl: './assets/img/logos/seis.png', iconSize: [38, 44]}) :
+        data == 7 ? L.icon({iconUrl: './assets/img/logos/siete.png', iconSize: [38, 44]}) :
+        data == 8 ? L.icon({iconUrl: './assets/img/logos/ocho.png', iconSize: [38, 44]}) :
+        data == 9 ? L.icon({iconUrl: './assets/img/logos/nueve.png', iconSize: [38, 44]}) :
+        data == 10 ? L.icon({iconUrl: './assets/img/logos/diez.png', iconSize: [38, 44]}) :
+        data == 11 ? L.icon({iconUrl: './assets/img/logos/once.png', iconSize: [38, 44]}) :
+        data == 12 ? L.icon({iconUrl: './assets/img/logos/doce.png', iconSize: [38, 44]}) :
+        data == 13 ? L.icon({iconUrl: './assets/img/logos/trece.png', iconSize: [38, 44]}) :
+        data == 14 ? L.icon({iconUrl: './assets/img/logos/catorce.png', iconSize: [38, 44]}) :
+        data == 15 ? L.icon({iconUrl: './assets/img/logos/quince.png', iconSize: [38, 44]}) :
+        data == 16 ? L.icon({iconUrl: './assets/img/logos/dieciseis.png', iconSize: [38, 44]}) :
+        data == 17 ? L.icon({iconUrl: './assets/img/logos/diecisiete.png', iconSize: [38, 44]}) :
+        data == 18 ? L.icon({iconUrl: './assets/img/logos/dieciocho.png', iconSize: [38, 44]}) :
+        data == 19 ? L.icon({iconUrl: './assets/img/logos/ball1.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
 }
 
 function getIconHover(data)  {
-    return data == 1 ? L.icon({iconUrl: '../assets/img/logos/unohover.png', iconSize: [38, 44]}) :
-        data == 2 ? L.icon({iconUrl: '../assets/img/logos/doshover.png', iconSize: [38, 44]}) :
-        data == 3 ? L.icon({iconUrl: '../assets/img/logos/treshover.png', iconSize: [38, 44]}) :
-        data == 4 ? L.icon({iconUrl: '../assets/img/logos/cuatrohover.png', iconSize: [38, 44]}) :
-        data == 5 ? L.icon({iconUrl: '../assets/img/logos/cincohover.png', iconSize: [38, 44]}) :
-        data == 6 ? L.icon({iconUrl: '../assets/img/logos/seishover.png', iconSize: [38, 44]}) :
-        data == 7 ? L.icon({iconUrl: '../assets/img/logos/sietehover.png', iconSize: [38, 44]}) :
-        data == 8 ? L.icon({iconUrl: '../assets/img/logos/ochohover.png', iconSize: [38, 44]}) :
-        data == 9 ? L.icon({iconUrl: '../assets/img/logos/nuevehover.png', iconSize: [38, 44]}) :
-        data == 10 ? L.icon({iconUrl: '../assets/img/logos/diezhover.png', iconSize: [38, 44]}) :
-        data == 11 ? L.icon({iconUrl: '../assets/img/logos/oncehover.png', iconSize: [38, 44]}) :
-        data == 12 ? L.icon({iconUrl: '../assets/img/logos/docehover.png', iconSize: [38, 44]}) :
-        data == 13 ? L.icon({iconUrl: '../assets/img/logos/trecehover.png', iconSize: [38, 44]}) :
-        data == 14 ? L.icon({iconUrl: '../assets/img/logos/catorcehover.png', iconSize: [38, 44]}) :
-        data == 15 ? L.icon({iconUrl: '../assets/img/logos/quincehover.png', iconSize: [38, 44]}) :
-        data == 16 ? L.icon({iconUrl: '../assets/img/logos/dieciseishover.png', iconSize: [38, 44]}) :
-        data == 17 ? L.icon({iconUrl: '../assets/img/logos/diecisietehover.png', iconSize: [38, 44]}) :
-        data == 18 ? L.icon({iconUrl: '../assets/img/logos/dieciochohover.png', iconSize: [38, 44]}) :
-        data == 19 ? L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
+    return data == 1 ? L.icon({iconUrl: './assets/img/logos/unohover.png', iconSize: [38, 44]}) :
+        data == 2 ? L.icon({iconUrl: './assets/img/logos/doshover.png', iconSize: [38, 44]}) :
+        data == 3 ? L.icon({iconUrl: './assets/img/logos/treshover.png', iconSize: [38, 44]}) :
+        data == 4 ? L.icon({iconUrl: './assets/img/logos/cuatrohover.png', iconSize: [38, 44]}) :
+        data == 5 ? L.icon({iconUrl: './assets/img/logos/cincohover.png', iconSize: [38, 44]}) :
+        data == 6 ? L.icon({iconUrl: './assets/img/logos/seishover.png', iconSize: [38, 44]}) :
+        data == 7 ? L.icon({iconUrl: './assets/img/logos/sietehover.png', iconSize: [38, 44]}) :
+        data == 8 ? L.icon({iconUrl: './assets/img/logos/ochohover.png', iconSize: [38, 44]}) :
+        data == 9 ? L.icon({iconUrl: './assets/img/logos/nuevehover.png', iconSize: [38, 44]}) :
+        data == 10 ? L.icon({iconUrl: './assets/img/logos/diezhover.png', iconSize: [38, 44]}) :
+        data == 11 ? L.icon({iconUrl: './assets/img/logos/oncehover.png', iconSize: [38, 44]}) :
+        data == 12 ? L.icon({iconUrl: './assets/img/logos/docehover.png', iconSize: [38, 44]}) :
+        data == 13 ? L.icon({iconUrl: './assets/img/logos/trecehover.png', iconSize: [38, 44]}) :
+        data == 14 ? L.icon({iconUrl: './assets/img/logos/catorcehover.png', iconSize: [38, 44]}) :
+        data == 15 ? L.icon({iconUrl: './assets/img/logos/quincehover.png', iconSize: [38, 44]}) :
+        data == 16 ? L.icon({iconUrl: './assets/img/logos/dieciseishover.png', iconSize: [38, 44]}) :
+        data == 17 ? L.icon({iconUrl: './assets/img/logos/diecisietehover.png', iconSize: [38, 44]}) :
+        data == 18 ? L.icon({iconUrl: './assets/img/logos/dieciochohover.png', iconSize: [38, 44]}) :
+        data == 19 ? L.icon({iconUrl: './assets/img/logos/ball1.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
 }
 
 function getZoom(data)  {
