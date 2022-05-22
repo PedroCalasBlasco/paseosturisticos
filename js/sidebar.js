@@ -1,12 +1,18 @@
 const closeSidebar = () => { 
     const sidebar = document.querySelector("#sidebar1");
     sidebar.style.display = 'none'; 
+
+    const rightSectionDiv = document.querySelector("#rightsection");
+    rightSectionDiv.style.display = "block";
 }
 
 
-const openSidebar = ((nombre, direccion, descripcion, img1, img2, audio) => { 
+const openSidebar = ((nombre, direccion, descripcion, img1, img2, img3, audio) => { 
+//const openSidebar = (() => { 
 
-    console.log(img1);
+    const rightSectionDiv = document.querySelector("#rightsection");
+    rightSectionDiv.style.display = "none";
+
 
     const sidebar = document.querySelector("#sidebar1");
     sidebar.style.display = 'block'; 
@@ -16,20 +22,37 @@ const openSidebar = ((nombre, direccion, descripcion, img1, img2, audio) => {
     sidebarContent.innerHTML = ``;
 
     sidebarContent.innerHTML = 
-        `<a onClick="closeSidebar()">X</a>
-        <h2 class="text-center">${nombre}</h2>
-        <h4 class="text-center mt-2">${direccion}</h4>
-        <h5 class="text-justify mt-2">${descripcion}</h5> 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        `
+        <div>
+            <a onClick="closeSidebar()">X</a>
+        </div>
+        <div class="sidebarContentEncabezado">
+            <h2 class="mt-2 ml-5 pl-4 pr-4">${nombre}</h2>
+            <h4 class="mt-2">${direccion}</h4>
+        </div>
+        <div class="sidebarContentAudio">
+            <div class="row">
+                <div class="col col-6 pt-2 pb-2">
+                    <span>hacé click para reproducir la audioguía</span>
+                    <iframe width="90%" height="70" frameborder="no" allow="autoplay" src="${audio}"></iframe>
+                </div>
+                <div class="col col-6 text-end pt-3 pb-2">
+                    <span>o escuchala en nuestro canal de Spotify</span>
+                    <img src="${img3}" class="img-fluid w-20" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="sidebarContentCuerpo">
+            <h5 class="text-justify mt-3">${descripcion}</h5> 
+        </div>
+        <div id="carouselExampleControls" class="carousel slide sidebarContentCarousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="${img1}" class="img-fluid w-80" alt="...">
+                    <img src="${img1}" class="img-fluid w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="${img2}" class="img-fluid w-80" alt="..."> 
-                </div>
-                <div class="carousel-item">
-                    <img src="${img1}" class="img-fluid w-80" alt="...">
+                    <img src="${img2}" class="img-fluid w-100" alt="..."> 
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -42,8 +65,9 @@ const openSidebar = ((nombre, direccion, descripcion, img1, img2, audio) => {
             </button>
         </div>
         <div class="mt-5 text-center">
-        <audio controls autoplay><source src="${audio}" type="audio/mpeg">Your browser does not support the audio element.</audio>
-        </div> `;
+        
+        </div> 
+        `;
 
 
 })      

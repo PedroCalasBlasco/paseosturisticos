@@ -1,3 +1,122 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('/../assets/fonts/Nunito-Regular.ttf');
+}
+
+body {
+    font-family: 'Nunito';
+}
+
+
+
+
+header .headerText{
+    background-color: #13b990; 
+    color: white;
+    
+}
+
+header .headerbutton{
+    background-color: white;
+    font-size: 2rem;
+    color: #13b990;  
+}
+
+header .headerbutton :hover{
+    cursor: pointer;
+}
+
+header .headerbutton div{
+    margin-top: 18px;
+    margin-left: 48px;
+}
+
+
+header .headerlogo{
+    background-color: #13b990;  
+}
+
+@media (max-width: 767.98px) { 
+
+    eader .headerbutton{
+        font-size: 0.7rem;   
+    }
+
+    header .headerbutton div{
+        margin-top: 14px;
+        margin-left: 33px;
+    }
+
+    header .headerText h1{
+        font-size: 1.3rem;
+    }
+
+    header .headerlogo{
+        padding-top: 5px;
+        text-align: center;   
+    }
+
+    /* header .headerlogo img{
+        width: 40%;   
+    } */
+}
+
+@media (max-width: 575.98px) { 
+    header .headerbutton{
+        font-size: 1rem;   
+    }
+
+    header .headerbutton div{
+        margin-top: 16px;
+        margin-left: 10px;
+    }
+
+    header .headerText h1{
+        font-size: 0.8rem;
+    }
+    header .headerlogo{
+        padding-top: 5px;
+        text-align: center; 
+    }
+}
+
+
+#titlePaseosResponsive{ 
+    color: #13b990; 
+    display: none;
+}
+
+@media (max-width: 767.98px) { 
+    #titlePaseosResponsive{ 
+        display: flex;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #titlePaseosResponsive{ 
+        display: flex;
+    }
+}
+
+#bodyPaseosResponsive{ 
+    display: none;
+}
+
+
+@media (max-width: 767.98px) { 
+    #bodyPaseosResponsive{ 
+        display: flex;
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    #bodyPaseosResponsive{ 
+        display: flex;
+    }
+}
+
+
 #selectDiaDiv{ 
     width: 30%;
     position: absolute;
@@ -9,14 +128,37 @@
  
 #map{ 
     margin-top: 2px;
-    height: 90vh; 
+    height: 88vh; 
 }
+
+
+@media (max-width: 767.98px) { 
+    #map{ 
+        margin-top: 2px;
+        height: 75vh; 
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    #map{ 
+        margin-top: 2px;
+        height: 75vh; 
+    }
+
+
+}
+
+
+
+
+
 
 #sidebar1{ 
     top: 0;
     position: absolute;
     z-index: 5000;
-    width: 60%;
+    width: 60vw;
     display: none;
 }
 
@@ -26,11 +168,215 @@
 
 #sidebarContent{ 
     background-color: white; 
+    position: fixed;
+    overflow-y: scroll;
+    width: 52vw;
+    left: 10vw;
+    top: 10vh;
+    bottom: 0;
 }
 
-header{
-    padding: 16px;
-    background-color: green; 
+#sidebarContent .sidebarContentEncabezado{ 
+    padding-left: 38px;
+}
+
+#sidebarContent h2{
+    color: #13b990; 
+}
+
+#sidebarContent h4{
+    color: #13b990; 
+}
+
+#sidebarContent .sidebarContentAudio{ 
+    padding-left: 38px;
+    padding-right: 38px;
+    border-top: 1px solid #13b990;
+    border-bottom: 1px solid #13b990;
+}
+
+#sidebarContent .sidebarContentCuerpo{ 
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+#sidebarContent .sidebarContentCarousel{ 
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+#sidebarContent .sidebarContentPie{ 
+    padding-left: 38px;
+    padding-right: 38px;
+    text-align: right;
+}
+
+
+@media (max-width: 767.98px) { 
+    #sidebarContent{ 
+        width: 100vw;
+        left: 0;
+        top: 24vh;
+        bottom: 0;
+    
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    #sidebarContent{ 
+        top: 8vh;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+#buttonSidebar .row :hover{ 
+    background-color: rgb(85,86,85);
+}
+
+#buttonSidebar{ 
+    overflow-y: scroll;
+    position: absolute;
+    top: vh;
+    left: 0;
+    width: 10vw;
+    height: 88vh;
+    display: none;
+    z-index: 8000;
+    background-color: white;
+    color: #13b990; 
+}
+
+@media (max-width: 767.98px) { 
+    #buttonSidebar{ 
+        top: 23vh;
+        width: 28vw;
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+
+    #buttonSidebar{ 
+        top: 8vh;
+        width: 40vw;
+    }
+
+
+}
+
+
+.leftButtons{ 
+    border-top: 2px solid #13b990 !important; 
+    color: #13b990 !important; 
+}
+
+.leftButtons :hover{ 
+    cursor: pointer;
+    color: white !important; 
+}
+
+.leftButtons :focus{ 
+    cursor: pointer;
+    background-color: #ccd3cc; 
+} 
+
+
+
+
+
+
+#welcome{ 
+    height: 88vh;
+    background: no-repeat center/100% url("../assets/img/teatro.jpg");
+    display: block;
     color: white;
 }
+
+#welcome h1{
+    margin-top: 15vh;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#map{ 
+    display: none;
+}
+
+#rightsection{ 
+    display: none;
+}
+
+#rightsection{ 
+    top: 10vh;
+    height: 89vh;
+    right: 0;
+    position: absolute;
+    z-index: 5000;
+    width: 30vw;
+    background-color: white;
+    display: none;
+    overflow: scroll;
+}
+
+#rightsection h2{
+    color:  #13b990; 
+}
+
+#rightsection .rightSectionProp{
+    color: #13b990; 
+    border-top: 1px solid #13b990; 
+    border-bottom: 1px solid #13b990; 
+}
+
+#rightsection .paddigs{
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+#rightsection .rightSectionEnd{
+    color: #13b990; 
+    padding-right: 36px;
+}
+
+
+
+
+@media (max-width: 767.98px) { 
+    #rightContainer{ 
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #rightContainer{ 
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* @media (max-width: 991.98px) { ... } */
+
+
+/* @media (max-width: 1199.98px) { ... } */
+
+
+/* @media (max-width: 1399.98px) { ... } */
+
+
 
