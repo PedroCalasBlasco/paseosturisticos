@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Nunito';
-    src: url('/../assets/fonts/Nunito-Regular.ttf');
+    src: url('./assets/fonts/Nunito-Regular.ttf');
 }
 
 body {
@@ -247,9 +247,8 @@ header .headerlogo{
     position: absolute;
     top: vh;
     left: 0;
-    width: 10vw;
+    width: 9vw;
     height: 88vh;
-    display: none;
     z-index: 8000;
     background-color: white;
     color: #13b990; 

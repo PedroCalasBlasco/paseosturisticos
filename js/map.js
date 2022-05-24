@@ -98,7 +98,7 @@ const featureSelected = (e) => {
        
     map = L.map('map').setView([-31.657462, -60.71049], 13);
 
-    map.options.minZoom = 16;
+    map.options.minZoom = 9;
     map.options.maxZoom = 18;
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -118,13 +118,10 @@ const featureSelected = (e) => {
     .then(data => {
         puntosTuristicos = L.geoJson(data,{
             onEachFeature: function(feature, layer) {
-                if(feature.properties.tipo == "start") {
-                    layer.bindPopup("<h5 class='text-center' style='color:#13b990;'> Aquí Comienza el Recorrido</h5><button class='btn btn-success' onClick='openSidebar(feature)'>Saber Más</button>" ).openPopup();
-                }else {
+                
                     layer.bindPopup(`<h5 class='text-left' style='color:#13b990;'> ${feature.properties.nombre} </h5><button class='btn' style='background-color:rgb(85,86,85);color:white;' onClick="openSidebar('${feature.properties.nombre}', '${feature.properties.direccion}', '${feature.properties.des}', '${feature.properties.img1}', '${feature.properties.img2}', '${feature.properties.img3}', '${feature.properties.audio}')">+INFO</button>`);
                     //layer.bindPopup(`<h5 class='text-center'> ${feature.properties.nombre} </h5><button class='btn btn-success' onClick="openSidebar('${feature.properties.nombre}', '${feature.properties.direccion}', '${feature.properties.des}')">+INFO</button>`);
 
-                }
                 // layer.setIcon(L.AwesomeMarkers.icon({ icon: getIcon(feature.properties.tipo), prefix:'fa', markerColor: getColor(feature.properties.circuito)}));
                 layer.setIcon(getIcon(feature.properties.id2));
                 layer.on('mouseover', function (event) {

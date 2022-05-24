@@ -29,7 +29,7 @@ const openSidebar = ((nombre, direccion, descripcion, img1, img2, img3, audio) =
         </div>
         <div class="sidebarContentEncabezado">
             <h2 class="mt-2 ml-5 pl-4 pr-4">${nombre}</h2>
-            <h4 class="mt-2">${direccion}</h4>
+            <h4 class="mt-2">${direccion != null ? direccion : ""}</h4>
         </div>
         <div class="sidebarContentAudio">
             <div class="row">
@@ -44,7 +44,7 @@ const openSidebar = ((nombre, direccion, descripcion, img1, img2, img3, audio) =
             </div>
         </div>
         <div class="sidebarContentCuerpo">
-            <h5 class="text-justify mt-3">${descripcion}</h5> 
+            <h5 class="text-justify mt-3">${descripcion ? descripcion : ""}</h5> 
         </div>
         <div id="carouselExampleControls" class="carousel slide sidebarContentCarousel" data-bs-ride="carousel">
             <div class="carousel-inner">
