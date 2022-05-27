@@ -29,7 +29,7 @@ function getIcon(data)  {
         data == 16 ? L.icon({iconUrl: './assets/img/logos/dieciseis.png', iconSize: [38, 44]}) :
         data == 17 ? L.icon({iconUrl: './assets/img/logos/diecisiete.png', iconSize: [38, 44]}) :
         data == 18 ? L.icon({iconUrl: './assets/img/logos/dieciocho.png', iconSize: [38, 44]}) :
-        data == 19 ? L.icon({iconUrl: './assets/img/logos/ball1.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
+        data == 19 ? L.icon({iconUrl: './assets/img/logos/diecinueve.png', iconSize: [38, 44]}) : L.icon({iconUrl: '../assets/img/logos/ball1.png', iconSize: [38, 44]});
 }
 
 function getIconHover(data)  {
