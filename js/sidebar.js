@@ -6,6 +6,22 @@ const closeSidebar = () => {
     rightSectionDiv.style.display = "block";
 }
 
+const closeSidebarHeader = () => { 
+    const sidebar = document.querySelector("#sidebar1");
+    sidebar.style.display = 'none'; 
+
+    const welcome = document.querySelector("#welcome");
+    const rightSectionDiv = document.querySelector("#rightsection");
+
+    if(welcome.style.display == "none"){
+        rightSectionDiv.style.display = "block";
+    }
+}
+
+
+
+
+
 
 const openSidebar = ((nombre, direccion, descripcion, img1, img2, img3, audio) => { 
 //const openSidebar = (() => { 

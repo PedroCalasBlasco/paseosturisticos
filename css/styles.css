@@ -230,14 +230,6 @@ header .headerlogo{
     }
 }
 
-
-
-
-
-
-
-
-
 #buttonSidebar .row :hover{ 
     background-color: rgb(85,86,85);
 }
@@ -256,17 +248,25 @@ header .headerlogo{
 
 @media (max-width: 767.98px) { 
     #buttonSidebar{ 
+        display: none;
         top: 23vh;
-        width: 28vw;
+        width: 20vw;
+
     }
 }
 
 
 @media (max-width: 575.98px) { 
 
-    #buttonSidebar{ 
-        top: 8vh;
-        width: 40vw;
+    #buttonSidebar{
+        display: none; 
+        top: 12vh;
+        width: 19vw;
+        height: 87vh;
+    }
+
+    #buttonSidebar p{
+        font-size: 0.6rem;
     }
 
 
@@ -310,6 +310,7 @@ header .headerlogo{
 @media (max-width: 767.98px) {
     #welcome {
         height: 74vh;
+        background: no-repeat center/212% url("../assets/img/teatro.jpg");
     }
 
     #welcome h1 {
@@ -319,11 +320,12 @@ header .headerlogo{
 
 @media (max-width: 575.98px) {
     #welcome {
-        background: no-repeat center/212% url("../assets/img/teatro.jpg");
+        height: 88vh;
+        background: no-repeat center/263% url("../assets/img/teatro.jpg");
     }
 
     #welcome h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
 }
@@ -371,6 +373,20 @@ header .headerlogo{
 
 
 
+bodyPaseosResponsive  h2 {
+     color: #13b990;
+ }
+
+#bodyPaseosResponsive .rightSectionProp {
+    color: #13b990;
+    border-top: 1px solid #13b990;
+    border-bottom: 1px solid #13b990;
+}
+
+#bodyPaseosResponsive .rightSectionEnd {
+    color: #13b990;
+    padding-right: 36px;
+}
 
 @media (max-width: 767.98px) { 
     #rightContainer{ 

@@ -75,11 +75,26 @@ function getCoordinates(data)  {
         data == 6 ? [-31.6578, -60.70986] : 
         data == 7 ? [-31.6501, -60.70048]  :
         data == 8 ? [-31.6161, -60.7189]  : 
-        data == 9 ? [-31.6517, -60.7068]  : 13
+        data == 9 ? [-31.6517, -60.7068]  : [-31.657462, -60.71049]
 }
 
 
 var map;
+
+
+//     map.on('zoomend', function() {
+//         console.log("HOLA")
+//         if (map.getZoom() <12){
+//             map.removeLayer(puntosTuristicos);//1st geoJSON layer
+//         }
+//         else {
+//             map.addLayer(puntosTuristicos);
+
+//         } //all layers are to be switched on, when zoom level reach 10
+//    });
+
+
+
 
 const featureSelected = (e) => {
 
@@ -165,6 +180,13 @@ const featureSelected = (e) => {
         }).addTo(map);
     })
     .catch(err => console.error(err));
+
+
+
+
+
+
+
 }
 
 
